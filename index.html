@@ -1,53 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>WELCOME TO OUR APARTMENT!</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-    
-  <body class="max-w-screen-lg p-4 mx-auto">
-    <header class="flex flex-col md:flex-row items-center">
-      <main role="main">
-        <h1 class="text-center md:text-left text-3xl md:text-4xl font-extrabold">Welcome to Our Apartment!</h1>
-        <article class="prose prose-lg mt-4">
-          <h2 class - "title">~~~~~~</h2>
-          <p><img src="img/building.jpg" alt="Outside view of the building" style="float: right;width:300px;height:300px;">
-Welcome to our apartment! We are so excited to host you. You can find information about the building and the city in the links below.
-Please don't forget to sign our guestbook!
-          </p>
-        </article>
-      </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE RESIDENCE | KIPS BAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, .nyc-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; }
+        .taxi-yellow { background-color: #F7C300; }
+        .taxi-border { border-left: 8px solid #F7C300; }
+        .nyc-grid { background-image: radial-gradient(#333 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="text-white antialiased nyc-grid">
+
+    <header class="bg-black border-b-4 border-yellow-500 py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <span class="taxi-yellow text-black px-2 py-1 font-bold text-sm mb-4 inline-block">EST. MANHATTAN</span>
+            <h1 class="text-6xl md:text-8xl mb-2">Welcome to <br><span class="text-yellow-500">The Apartment</span></h1>
+            <p class="text-gray-400 text-xl max-w-xl font-light">Your concrete jungle sanctuary at Kips Bay Towers. Concrete, glass, and the city that never sleeps.</p>
+        </div>
     </header>
-      
-    <nav class="mt-8 md:mx-8 prose">
-    <div id="outline-container-orgccd7d0e" class="outline-2">
-        <h2 class = "title"> Quick Links </h2>
-            </header><ul class="org-ul nav">
-            <li><a href="information/index.html">Apartment Information</a></li>
-            <li><a href="asked/index.html">If It's Been Asked, It's Been Answered</a></li>
-            <li><a href="exit/index.html">Final Exit</a></li>
-            <li><a href="spots/index.html">Favorite Local Spots</a></li>
-            <li><a href="museums/index.html">Free and Sometimes Free Museums</a></li>
-            <li><a href="history/index.html">Kips Bay Towers Condominium</a></li>
-            <li><a href="weather/index.html">Current Weather</a></li>
-        </ul>
-    </nav>
-    <nav class="mt-8 md:mx-8 prose">
-    <div id="outline-container-orgccd7d0e" class="outline-2">
-        <h2 class = "title"> Guest Book </h2>
-            </header><ul class="org-ul nav">
-            <li> <a href="guestbook/index.html">Sign our guestbook</a></li>
-            <li><a href="entries/index.html">View previous entries</a></li>
-        </ul>
-  </body>
-</html>
-    
-<hr/>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p>Last&nbsp;updated:&nbsp;2025-12-11</p>
-</div>
+
+    <main class="max-w-5xl mx-auto p-6 md:p-12">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 bg-white text-black overflow-hidden rounded-sm shadow-2xl">
+            <div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-4xl mb-6 taxi-border pl-6">The Residence</h2>
+                <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                    We are thrilled to have you in the heart of the city. This space was designed by the legendary <strong>I.M. Pei</strong>. It’s brutalist, it’s bold, and it’s quintessentially New York. 
+                </p>
+                <p class="text-gray-500 italic">
+                    "There is no place like it, no matter how many places you help yourself to." — Walt Whitman
+                </p>
+            </div>
+            <div class="lg:col-span-5 grayscale hover:grayscale-0 transition-all duration-500">
+                <img src="img/building.jpg" alt="Kips Bay Towers" class="w-full h-full object-cover min-h-[400px]">
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <section>
+                <h3 class="text-2xl mb-8 border-b border-gray-700 pb-2 text-yellow-500">Logistics & Intel</h3>
+                <nav class="space-y-6">
+                    <a href="information/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">01. APARTMENT INFO</span>
+                            <span class="text-gray-500 text-sm">Tech, trash, and essentials.</span>
+                        </div>
+                        <span class="text-2xl">→</span>
+                    </a>
+                    <a href="asked/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">02. THE FAQ</span>
+                            <span class="text-gray-500 text-sm">Everything you’re wondering.</span>
+                        </div>
+                        <span class="text-2xl">→</span>
+                    </a>
+                    <a href="history/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">03. ARCHITECTURE</span>
+                            <span class="text-gray-500 text-sm">Kips Bay Towers history.</span>
+                        </div>
+                        <span class="text-2xl">→</span>
+                    </a>
+                    <a href="exit/index.html" class="group flex items-center justify-between border-t border-red-900 pt-4">
+                        <div>
+                            <span class="block text-xl font-bold text-red-500">04. FINAL EXIT</span>
+                            <span class="text-gray-500 text-sm">Check-out procedures.</span>
+                        </div>
+                        <span class="text-red-500 text-2xl">→</span>
+                    </a>
+                </nav>
+            </section>
+
+            <section>
+                <h3 class="text-2xl mb-8 border-b border-gray-700 pb-2 text-yellow-500">City Guide</h3>
+                <nav class="space-y-6">
+                    <a href="spots/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">LOCAL SPOTS</span>
+                            <span class="text-gray-500 text-sm">Curated food & drink.</span>
+                        </div>
+                        <span class="bg-blue-600 rounded-full h-8 w-8 flex items-center justify-center text-xs font-bold italic leading-none">A</span>
+                    </a>
+                    <a href="museums/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">MUSEUMS</span>
+                            <span class="text-gray-500 text-sm">Free culture & galleries.</span>
+                        </div>
+                        <span class="bg-red-600 rounded-full h-8 w-8 flex items-center justify-center text-xs font-bold italic leading-none">C</span>
+                    </a>
+                    <a href="weather/index.html" class="group flex items-center justify-between">
+                        <div>
+                            <span class="block text-xl font-bold group-hover:text-yellow-500 transition-colors">WEATHER</span>
+                            <span class="text-gray-500 text-sm">The 5-day outlook.</span>
+                        </div>
+                        <span class="bg-green-600 rounded-full h-8 w-8 flex items-center justify-center text-xs font-bold italic leading-none">4</span>
+                    </a>
+                </nav>
+
+                <div class="mt-12 bg-yellow-500 p-8 text-black">
+                    <h3 class="text-3xl mb-2">Leave Your Mark</h3>
+                    <p class="mb-6 font-medium">Sign our digital guestbook before you head back to the real world.</p>
+                    <a href="guestbook/index.html" class="inline-block bg-black text-white px-6 py-3 font-bold hover:bg-gray-800 transition-all">SIGN THE BOOK</a>
+                    <a href="entries/index.html" class="block mt-4 text-sm font-bold underline">VIEW PREVIOUS ENTRIES</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-black py-12 px-6 mt-12 text-center border-t border-gray-800">
+        <p class="text-gray-600 tracking-widest text-xs uppercase">Last Updated // 2026.02.28 // Manhattan, NY</p>
+    </footer>
+
 </body>
 </html>
