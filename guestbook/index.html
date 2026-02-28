@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guestbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESTBOOK | KIPS BAY RESIDENCE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, .nyc-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; }
+        .taxi-yellow { background-color: #F7C300; }
+        .form-container { background: white; padding: 2rem; border-radius: 2px; box-shadow: 10px 10px 0px 0px #F7C300; }
+        .ledger-line { border-bottom: 2px solid #333; margin-bottom: 2rem; }
+    </style>
 </head>
-<body>
-    <script type="text/javascript" src="https://form.jotform.com/jsform/253446163672056"></script>
+<body class="text-white antialiased">
+
+    <nav class="p-6">
+        <a href="index.html" class="text-yellow-500 font-bold hover:underline flex items-center gap-2">
+            <span>←</span> RETURN TO TERMINAL
+        </a>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 ledger-line pb-8">
+            <div>
+                <h1 class="text-6xl md:text-8xl text-white mb-2 leading-tight">Guest<br><span class="text-yellow-500">Ledger</span></h1>
+                <p class="text-zinc-500 uppercase tracking-[0.3em] font-black text-sm">Official Record of Stay // Apt 5CD</p>
+            </div>
+            <div class="text-left md:text-right">
+                <span class="text-xs font-bold text-zinc-600 block uppercase">Log Entry Date</span>
+                <span class="text-xl font-mono text-white">FEB 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6 pb-24">
+        
+        <div class="mb-12">
+            <p class="text-xl text-zinc-400 leading-relaxed max-w-2xl">
+                Your feedback is our <span class="text-white font-bold italic">Secret Sauce</span>. 
+                Before you head out into the city, please leave a note for the archive. 
+                Whether it was the Pei architecture or the local bagels, we want to hear about it.
+            </p>
+        </div>
+
+        <section class="form-container">
+            <script type="text/javascript" src="https://form.jotform.com/jsform/253446163672056"></script>
+        </section>
+
+        <div class="mt-12 flex justify-end">
+            <div class="border-t-2 border-zinc-700 pt-4 w-64 text-right">
+                <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Authorized Signature</p>
+                <p class="nyc-font text-yellow-500 text-lg">Eric Sussman, Host</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-black py-16 px-6 text-center border-t border-gray-900 mt-12">
+        <div class="max-w-4xl mx-auto opacity-40 grayscale flex justify-center gap-12 mb-8">
+            <span class="text-4xl">✍️</span>
+            <span class="text-4xl">🏙️</span>
+            <span class="text-4xl">📄</span>
+        </div>
+        <p class="text-zinc-700 text-[10px] tracking-[0.5em] uppercase font-black">Archive Dept // Kips Bay Towers Condominium</p>
+    </footer>
+
 </body>
 </html>

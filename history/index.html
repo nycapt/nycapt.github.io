@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-<!-- 2023-03-05 -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Information</title>
-<meta name="author" content="Eric Sussman" />
-<meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="./style.css" />
-<link rel="stylesheet" href="./print.css" media="print" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ARCHITECTURE | KIPS BAY TOWERS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, .nyc-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; }
+        .taxi-yellow { background-color: #F7C300; }
+        .blueprint-line { border-top: 1px solid #333; position: relative; }
+        .blueprint-line::after { content: ''; position: absolute; right: 0; top: -4px; width: 8px; height: 8px; background: #F7C300; }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .pei-quote { border-left: 8px solid #F7C300; padding-left: 1.5rem; font-style: italic; }
+    </style>
 </head>
-<body>
-<div id="content" class="content">
-<header>
-<h1 class="title">Kips Bay Towers Condominium</h1>
-</header>
-<div class="content-section">
-    <p>Designed by renowned architect I.M. Pei, Kips Bay Towers occupies a serene, private park-like enclave in New York City's desirable Kips Bay/Murray Hill neighborhood in Lower Midtown. Its hallmark floor-to-ceiling picture windows pioneered modern development design trends.</p>
+<body class="text-white antialiased">
 
-    <h3>Unique Site Features</h3>
-    <p>Spanning 7.5 acres including 3 acres of private landscaped gardens, a playground, basketball/pickleball court, and sports field, the complex offers extensive amenities: 24-hour doorman, concierge, porters, live-in superintendent, fitness center, community room, children's playroom, storage, bike rooms, laundry facilities, and parking garage.</p>
+    <nav class="p-6 flex justify-between items-center border-b border-zinc-800">
+        <a href="index.html" class="text-yellow-500 font-bold hover:underline">← RETURN TO TERMINAL</a>
+        <span class="text-[10px] tracking-[0.3em] text-zinc-500 uppercase font-black">Architecture Brief // 001</span>
+    </nav>
 
-    <h3>Historical Background</h3>
-    <p>The site once held the original Phipps Houses at 321-337 East 31st Street, built in 1906 by Henry Phipps, Carnegie Steel's second-largest shareholder. By the 1950s, these tenements faced condemnation, enabling the new development.</p>
+    <header class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <h1 class="text-6xl md:text-9xl text-white mb-4 leading-none font-black">Kips Bay<br><span class="text-yellow-500">Towers</span></h1>
+        <div class="flex flex-col md:flex-row gap-8 items-end justify-between">
+            <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl font-light leading-snug">
+                Designed by Pritzker Prize-winning architect <span class="text-white font-bold underline decoration-yellow-500">I.M. Pei</span>, this complex is a Brutalist masterpiece in the heart of Murray Hill.
+            </p>
+            <div class="text-right">
+                <span class="block text-4xl font-bold">1960</span>
+                <span class="text-xs uppercase tracking-widest text-zinc-500">Completion Date</span>
+            </div>
+        </div>
+    </header>
 
-    <h3>Development Story</h3>
-    <p>Originally, Kips Bay Plaza, the federally financed middle-income rental project fell under Title I of the 1949 Housing Act. Pei, one of his first NYC projects though reluctantly assigned by developer William Zeckendorf, transformed initial six-building plans into two towers to prioritize open park space, choosing 50 sapling trees over a planned Picasso sculpture.</p>
+    <main class="max-w-5xl mx-auto p-6 space-y-20 pb-32">
 
-    <h3>Architectural Details</h3>
-    <p>Exemplifying Brutalist style, the South Tower was completed in 1960 and the North Tower in 1965, each rising 20 floors to house over 4,000 residents across 1,118 units. Condominium conversion became effective in November 1981.</p>
-</div>
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-7 pei-quote text-2xl md:text-3xl text-zinc-200">
+                "Pei transformed initial six-building plans into two towers to prioritize open park space, choosing 50 sapling trees over a planned Picasso sculpture."
+            </div>
+            <div class="lg:col-span-5 glass-panel p-6">
+                <h3 class="text-yellow-500 mb-4">The Pei Vision</h3>
+                <p class="text-sm leading-relaxed text-zinc-400">
+                    Occupying a serene, private park-like enclave, the towers' hallmark floor-to-ceiling picture windows pioneered modern development design trends.
+                </p>
+            </div>
+        </section>
 
-</div>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-px bg-zinc-800 border border-zinc-800">
+            <div class="bg-zinc-900 p-10">
+                <h3 class="text-yellow-500 text-xl mb-4">Unique Site Features</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                    Spanning 7.5 acres including 3 acres of private landscaped gardens, a playground, basketball/pickleball court, and sports field.
+                </p>
+            </div>
+            <div class="bg-zinc-900 p-10">
+                <h3 class="text-yellow-500 text-xl mb-4">Historical Context</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                    The site once held the original Phipps Houses (1906). By the 1950s, these tenements faced condemnation, enabling this modern transformation.
+                </p>
+            </div>
+            <div class="bg-zinc-900 p-10">
+                <h3 class="text-yellow-500 text-xl mb-4">Development Story</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                    Originally federally financed as 'Kips Bay Plaza', Pei reluctantly took the project under developer William Zeckendorf.
+                </p>
+            </div>
+            <div class="bg-zinc-900 p-10">
+                <h3 class="text-yellow-500 text-xl mb-4">Brutalist Specs</h3>
+                <ul class="text-zinc-400 space-y-2">
+                    <li><strong class="text-white uppercase">Units:</strong> 1,118 Residences</li>
+                    <li><strong class="text-white uppercase">Conversion:</strong> Nov. 1981</li>
+                    <li><strong class="text-white uppercase">Floors:</strong> 20 Stories per tower</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="blueprint-line pt-8">
+            <h2 class="text-4xl mb-8">Modern Amenities</h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 border border-zinc-700 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors cursor-default">24-Hr Doorman</span>
+                <span class="px-4 py-2 border border-zinc-700 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors cursor-default">Fitness Center</span>
+                <span class="px-4 py-2 border border-zinc-700 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors cursor-default">Community Room</span>
+                <span class="px-4 py-2 border border-zinc-700 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors cursor-default">Laundry Facilities</span>
+                <span class="px-4 py-2 border border-zinc-700 text-xs font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-black transition-colors cursor-default">Parking Garage</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white text-black py-20 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="max-w-sm">
+                <h4 class="text-3xl font-black mb-2">300 EAST 33RD</h4>
+                <p class="text-sm font-medium opacity-60">Located in New York City's desirable Kips Bay/Murray Hill neighborhood.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-xs font-bold tracking-widest uppercase mb-4">Digital Archive Access</p>
+                <div class="taxi-yellow p-4 inline-block font-black text-xl italic">
+                    MANHATTAN, NEW YORK
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

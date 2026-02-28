@@ -1,104 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-<!-- 2023-03-05 -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Information</title>
-<meta name="author" content="Eric Sussman" />
-<meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="./style.css" />
-<link rel="stylesheet" href="./print.css" media="print" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE | NYC MUSEUM GUIDE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, .nyc-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; }
+        .taxi-yellow { background-color: #F7C300; }
+        .museum-card { border-bottom: 1px solid #333; transition: all 0.3s ease; }
+        .museum-card:hover { border-bottom-color: #F7C300; }
+        .admission-tag { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; }
+        .dot-grid { background-image: radial-gradient(#333 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
 </head>
-<body>
-<div id="content" class="content">
-<header>
-<h1 class="title">Free and Sometimes Free Museums</h1>
-</header><ul class="org-ul print">
-    
-<p>
-  <a href="https://www.nycgo.com/articles/free-nyc-museums" target="_blank">
-    https://www.nycgo.com/articles/free-nyc-museums
-  </a>
-</p>
+<body class="text-white antialiased dot-grid">
 
-<h2>Our Favorites</h2>
+    <nav class="p-6">
+        <a href="index.html" class="text-yellow-500 font-bold hover:underline flex items-center gap-2">
+            <span>←</span> RETURN TO TERMINAL
+        </a>
+    </nav>
 
-<h3>Museum at FIT – Fashion Institute of Technology</h3>
-<p>
-  227 West 27th Street at 7th Avenue<br>
-  New York, New York 10001<br>
-  212-217-4558
-</p>
-<p>
-  Tuesday – Friday: Noon – 8:00pm<br>
-  Saturday: 10:00am – 5:00pm
-</p>
-<p><strong>Admission to exhibitions is free</strong></p>
+    <header class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-6xl md:text-8xl text-white mb-4 leading-tight">The Arts<br><span class="text-yellow-500">& Culture</span></h1>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+            <p class="text-zinc-500 uppercase tracking-[0.3em] font-black text-sm">Curated Free & Pay-What-You-Wish Access</p>
+            <a href="https://www.nycgo.com/articles/free-nyc-museums" target="_blank" class="bg-white text-black px-4 py-2 font-bold text-xs hover:bg-yellow-500 transition-colors">VIEW FULL NYC GUIDE</a>
+        </div>
+    </header>
 
-<h3>The Frick Collection</h3>
-<p>
-  1 East 70th Street at 5th Avenue<br>
-  New York, New York 10021<br>
-  212-288-0700
-</p>
-<p>
-  <strong>Admission is free for all visitors</strong> each first Friday of the month from 6:00pm – 9:00pm
-</p>
+    <main class="max-w-5xl mx-auto p-6 space-y-4 pb-24">
+        
+        <h2 class="text-2xl text-zinc-600 mb-8 border-b border-zinc-800 pb-2">Our Favorites</h2>
 
-<h3>The Morgan Library &amp; Museum</h3>
-<p>
-  225 Madison Avenue at 36th Street<br>
-  New York, New York 10016
-</p>
-<p>
-  <strong>Admission is free for all visitors</strong> Friday evenings from 7:00pm – 9:00pm
-</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
+            
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">Museum at FIT</h3>
+                    <span class="taxi-yellow text-black px-2 py-1 admission-tag font-bold">ALWAYS FREE</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">227 W 27th St @ 7th Ave</p>
+                <div class="text-sm text-zinc-400 space-y-1">
+                    <p>Tue – Fri: 12:00pm – 8:00pm</p>
+                    <p>Sat: 10:00am – 5:00pm</p>
+                </div>
+            </section>
 
-<h3>The Museum of Modern Art (MoMA)</h3>
-<p>
-  11 West 53rd Street<br>
-  New York, New York 10019
-</p>
-<p>
-  <strong>Admission is free for all visitors</strong> Friday evenings from 4:00pm – 8:00pm
-</p>
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">The MoMA</h3>
+                    <span class="border border-yellow-500 text-yellow-500 px-2 py-1 admission-tag">FRI NIGHTS</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">11 West 53rd Street</p>
+                <div class="text-sm text-zinc-400">
+                    <p class="bg-zinc-800 p-2 border-l-4 border-yellow-500 italic">Free for all visitors Friday evenings <br><span class="text-white font-bold">4:00pm – 8:00pm</span></p>
+                </div>
+            </section>
 
-<h3>New York Public Library – Stephen A. Schwarzman Building</h3>
-<p>
-  476 5th Avenue at 42nd Street<br>
-  New York, New York 10018<br>
-  917-275-6975
-</p>
-<p>
-  Monday, Friday, Saturday: 10:00am – 6:00pm<br>
-  Tuesday, Wednesday, Thursday: 10:00am – 8:00pm<br>
-  Sunday: 1:00pm – 5:00pm
-</p>
-<p>
-  Free exhibitions and daily tours, and home to the real
-  <strong>Winnie-the-Pooh and friends</strong>
-</p>
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">NYPL Main Branch</h3>
+                    <span class="taxi-yellow text-black px-2 py-1 admission-tag font-bold">ALWAYS FREE</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">476 5th Ave @ 42nd St</p>
+                <p class="text-sm text-zinc-400 mb-2">Free exhibitions, tours, and the real <span class="text-white font-bold">Winnie-the-Pooh</span>.</p>
+                <div class="text-[10px] text-zinc-600 font-bold uppercase">Open Daily • Late hours Tue-Thu</div>
+            </section>
 
-<h3>Society of Illustrators</h3>
-<p>
-  128 East 63rd Street (between Park and Lexington Avenues)<br>
-  New York, New York 10065
-</p>
-<p>
-  <strong>Admission is free for all visitors</strong> on Tuesdays from 5:00pm – 8:00pm
-</p>
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">The Whitney</h3>
+                    <span class="border border-yellow-500 text-yellow-500 px-2 py-1 admission-tag">PAY WHAT YOU WISH</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">99 Gansevoort Street</p>
+                <div class="text-sm text-zinc-400">
+                    <p>Fridays: <span class="text-white font-bold">7:00pm – 9:30pm</span></p>
+                </div>
+            </section>
 
-<h3>Whitney Museum of American Art</h3>
-<p>
-  99 Gansevoort Street<br>
-  New York, New York 10014
-</p>
-<p>
-  <strong>Admission is PAY WHAT YOU WISH</strong> for all visitors on Fridays from 7:00pm – 9:30pm
-</p>
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">The Morgan Library</h3>
+                    <span class="border border-yellow-500 text-yellow-500 px-2 py-1 admission-tag">FRI NIGHTS</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">225 Madison Ave @ 36th St</p>
+                <p class="text-sm text-zinc-400">Free Friday admission: <span class="text-white font-bold">7:00pm – 9:00pm</span></p>
+            </section>
+
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">The Frick</h3>
+                    <span class="border border-yellow-500 text-yellow-500 px-2 py-1 admission-tag">1ST FRIDAYS</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">1 East 70th St @ 5th Ave</p>
+                <p class="text-sm text-zinc-400">First Friday of the month: <span class="text-white font-bold">6:00pm – 9:00pm</span></p>
+            </section>
+
+            <section class="museum-card py-8 group">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-black group-hover:text-yellow-400 transition-colors">Society of Illustrators</h3>
+                    <span class="border border-yellow-500 text-yellow-500 px-2 py-1 admission-tag">TUESDAYS</span>
+                </div>
+                <p class="text-xs text-zinc-500 mb-4">128 East 63rd Street</p>
+                <p class="text-sm text-zinc-400">Free on Tuesdays: <span class="text-white font-bold">5:00pm – 8:00pm</span></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-white text-black py-12 px-6 mt-12 text-center">
+        <p class="text-xs font-black uppercase tracking-[0.4em]">Stay Inspired • Manhattan 2026</p>
+    </footer>
 
 </body>
 </html>

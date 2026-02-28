@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guestbook Entries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ARCHIVE | GUEST ENTRIES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, .nyc-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; }
+        .taxi-yellow { background-color: #F7C300; }
+        .archive-frame { border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.02); }
+        .status-pill { font-size: 10px; font-weight: 900; letter-spacing: 0.1em; }
+    </style>
 </head>
-<body>
-    <div class="jotform-table-embed" style="width: 100%; height: 600px;" data-id="253446163672056" data-iframesource="www.jotform.com" data-type="interactive"></div>
-    <script>(function(doc, id){var scripts=doc.getElementsByTagName("script")[0]; if (!doc.getElementById(id)){var script=doc.createElement("script"); script.async=1; script.id=id; script.src="https://cdn.jotfor.ms/s/umd/latest/for-sheets-embed.js"; scripts.parentNode.insertBefore(script, scripts);}})(document, "jotform-async");</script>
+<body class="text-white antialiased">
+
+    <nav class="p-6">
+        <a href="index.html" class="text-yellow-500 font-bold hover:underline flex items-center gap-2">
+            <span>←</span> DASHBOARD
+        </a>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-zinc-800 pb-10">
+            <div>
+                <span class="status-pill taxi-yellow text-black px-2 py-0.5 mb-4 inline-block uppercase">Public Record</span>
+                <h1 class="text-6xl md:text-8xl text-white mb-2 leading-tight">The<br><span class="text-yellow-500">Archive</span></h1>
+                <p class="text-zinc-500 uppercase tracking-[0.3em] font-black text-sm">Collective Memories of Apartment 5CD</p>
+            </div>
+            <div class="hidden md:block text-right">
+                <p class="text-zinc-600 text-[10px] font-black uppercase mb-1">Catalog Number</p>
+                <p class="text-2xl font-mono text-zinc-400">#KBT-5CD-2026</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 pb-24 space-y-12">
+        
+        <div class="max-w-2xl">
+            <p class="text-xl text-zinc-400 leading-relaxed font-light">
+                A digital history of our visitors. This ledger documents the experiences, recommendations, and moments shared within these <span class="text-white font-bold">I.M. Pei</span> walls.
+            </p>
+        </div>
+
+        <section class="archive-frame p-1 md:p-4 rounded-sm shadow-2xl relative">
+            <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-yellow-500"></div>
+            <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-yellow-500"></div>
+
+            <div class="jotform-table-embed" style="width: 100%; height: 700px;" data-id="253446163672056" data-iframesource="www.jotform.com" data-type="interactive"></div>
+            <script>(function(doc, id){var scripts=doc.getElementsByTagName("script")[0]; if (!doc.getElementById(id)){var script=doc.createElement("script"); script.async=1; script.id=id; script.src="https://cdn.jotfor.ms/s/umd/latest/for-sheets-embed.js"; scripts.parentNode.insertBefore(script, scripts);}})(document, "jotform-async");</script>
+        </section>
+
+        <section class="flex flex-col items-center py-12 border-t border-zinc-900">
+            <p class="text-zinc-500 text-xs uppercase font-black tracking-widest mb-4">Have you shared your story yet?</p>
+            <a href="guestbook/index.html" class="px-10 py-4 bg-white text-black font-black uppercase hover:bg-yellow-500 transition-colors tracking-tighter italic">
+                ADD YOUR ENTRY →
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="bg-black py-12 px-6 text-center border-t border-zinc-900">
+        <p class="text-zinc-800 text-[10px] tracking-[0.5em] uppercase font-black">Memory Logistics // Kips Bay Towers Condominium</p>
+    </footer>
+
 </body>
 </html>
